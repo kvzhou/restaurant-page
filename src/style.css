@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+
+    font-family: Verdana, sans-serif;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+
+/*********************************************************** Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logoDiv {
+    margin-top: 20px;
+}
+
+#logoDiv img {
+    max-width: 100px;
+    height: auto;
+}
+
+h1 {
+    margin: 0 0 20px 0;
+
+    font-size: 48px;
+    font-weight: normal;
+    color: #ff7000;
+}
+
+
+
+/*********************************************************** Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tabBar {
+    margin-bottom: 15px;
+}
+
+#tabBar button {
+    height: 28px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+
+    background-color: white;
+
+    font-size: 18px;
+}
+
+.currTabBtn, #tabBar button:hover {
+    text-decoration: underline;
+    text-decoration-color: #ff7000;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+}
+
+#tabBar button:active {
+    text-decoration: underline;
+    text-decoration-color: #ff9b4d;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+}
+
+.tabContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tabContent.hide {
+    display: none;
+}
+
+
+
+/*********************************************************** Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px 0;
+
+    background-color: #363537;
+
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0 0 20px 0;
+}
+
+
+/*********************************************************** Home Tab */
+
+.imgContainerWithHiddenItems {
+    position: relative;
+
+    margin-bottom: 40px;
+}
+
+.imgWithHiddenItems {
+    display: block;
+
+    width: 1200px;
+    height: auto;
+
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.hiddenItemsDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    background-color: #363537;
+
+    text-align: center;
+
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.imgContainerWithHiddenItems:hover .imgWithHiddenItems {
+    opacity: 0.3;
+}
+
+.imgContainerWithHiddenItems:hover .hiddenItemsDiv {
+    opacity: 1;
+}
+
+.hiddenText {
+    margin: 30px 60px;
+
+    color: white;
+    font-size: 30px;
+}
+
+.hiddenBtn {
+    margin-bottom: 30px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+
+    background-color: #ff7000;
+
+    color: white;
+    font-size: 30px;
+}
+
+.hiddenBtn:hover {
+    box-shadow: inset 0px 0px 200px rgba(0,0,0,0.10);
+}
+
+.hiddenBtn:active {
+    box-shadow: inset 0px 0px 200px rgba(0,0,0,0.20);
+}
+
+
+
+/*********************************************************** Menu Tab */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 600px;
+    margin-bottom: 40px;
+}
+
+.menuItem {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.menuItemHeading {
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+.menuItemPrice {
+    float: right;
+}
+
+.menuItemDescription {
+    margin: 0 0 20px 0;
+}
+
+
+
+/*********************************************************** About Tab */
+.aboutTabSection {
+    max-width: 800px;
+
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+
+#mapImg {
+    width: 800px;
+    height: auto;
+}
