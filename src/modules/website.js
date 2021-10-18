@@ -1,7 +1,7 @@
-import setCurrTab from "./modules/tab-helper.js";
-import loadHomeTab from "./modules/home-tab.js";
-import loadMenuTab from "./modules/menu-tab.js";
-import loadAboutTab from "./modules/about-tab.js"
+import setCurrTab from "./tab-helper.js";
+import loadHomeTab from "./home-tab.js";
+import loadMenuTab from "./menu-tab.js";
+import loadAboutTab from "./about-tab.js"
 
 function createHeader() {
     const header = document.createElement("header");
